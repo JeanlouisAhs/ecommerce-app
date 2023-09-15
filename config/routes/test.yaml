@@ -1,0 +1,10 @@
+test:
+  path: /test/{name<[A-Za-z]+>?World}
+  controller: App\Controller\TestController::test
+  methods: [GET,POST]
+  host: [localhost,127.0.0.1]
+  schemes: [http,https]
+#    defaults:
+#        name: 'World'
+#    requirements:
+#        name: '[A-Za-z]+'
